@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Color Grid</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .box {
+      border: 4px solid black;
+    }
+
+    .box1 {
+      background-color: #800017; /* Dark Red */
+      width: 33.33%;
+      height: 50%;
+    }
+
+    .box2 {
+      background-color: #B5E61D; /* Lime Green */
+      width: 66.67%;
+      height: 50%;
+    }
+
+    .box3 {
+      background-color: #00A2E8; /* Blue */
+      width: 33.33%;
+      height: 50%;
+    }
+
+    .box4 {
+      background-color: #FFF200; /* Yellow */
+      width: 33.33%;
+      height: 50%;
+    }
+
+    .box5 {
+      background-color: #A349A4; /* Purple */
+      width: 33.34%;
+      height: 50%;
+    }
+
+    @media (max-width: 768px) {
+      .box1, .box2, .box3, .box4, .box5 {
+        width: 100%;
+        height: 20%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    <div class="box box5"></div>
+  </div>
+</body>
+</html>
